@@ -1,0 +1,26 @@
+{
+  "name": "campeonato-voleibol",
+  "version": "1.0.0",
+  "description": "Trabalho final da matéria Programação para Internet",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanttellie/campeonato-voleibol.git"
+  },
+  "author": "Ellen Priscila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanttellie/campeonato-voleibol/issues"
+  },
+  "homepage": "https://github.com/vanttellie/campeonato-voleibol#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1"
+  }
+}
