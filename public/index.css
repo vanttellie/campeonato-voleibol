@@ -1,0 +1,39 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.custom-navbar {
+    background: linear-gradient(to right, #b30000, #ff3333);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.custom-navbar .nav-link {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-left: 180px;
+}
+
+.login-box {
+    background-color: white;
+    width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn {
+    background: linear-gradient(to right, #b30000, #ff3333);
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #990000, #cc0000);
+    cursor: pointer;
+    transform: translateY(-2px);
+}

@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Minha Aplicação</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campeonato de Voleibol | Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/index.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Olá, mundo! 🚀</h1>
-  <p>Se você está vendo isso, a aplicação está funcionando.</p>
+    <!-- Navbar -->
+    <nav class="navbar custom-navbar fixed-top">
+        <a class="nav-link text-white ms-5" href="/">Início</a>
+    </nav>
+
+    <!-- Formulário de Login -->
+    <div class="d-flex align-items-center justify-content-center min-vh-100">
+        <div class="login-box p-4">
+            <h2 class="text-center mb-4">Bem vindo de volta</h2>
+            <form method="POST" action="/menu.html">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="senha" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn login-btn">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -23,3 +23,23 @@ app.listen(port, host, () => {
 app.get("/", (requisicao, resposta) => {
     resposta.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
+app.get("/menu", (requisicao, resposta) => {
+    resposta.sendFile(path.join(__dirname, "public", "menu.html"));
+});
+
+app.get("/cadastro_de_equipes", (requisicao, resposta) => {
+    resposta.sendFile(path.join(__dirname, "public", "cads_equipe.html"));
+});
+
+app.get("/cadastro_de_jogador", (requisicao, resposta) => {
+    resposta.sendFile(path.join(__dirname, "public", "cads_jogador.html"));
+});
+
+app.get("/lista_equipes", (requisicao, resposta) => {
+    resposta.sendFile(path.join(__dirname, "public", "lista_equipes.html"));
+});
+
+app.get("/lista_jogadores", (requisicao, resposta) => {
+    resposta.sendFile(path.join(__dirname, "public", "lista_jogadores.html"));
+});

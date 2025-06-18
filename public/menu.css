@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+.custom-navbar {
+  background: linear-gradient(to right, #b30000, #ff3333);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('/public/images/bola-batendo-na-rede.jpg') center/cover no-repeat;
+  padding-top: 60px;
+}
+
+.content {
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-btn {
+  background: linear-gradient(to right, #b30000, #ff3333);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-btn:hover {
+  background: linear-gradient(to right, #990000, #cc0000);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
