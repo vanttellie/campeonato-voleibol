@@ -656,8 +656,8 @@ app.get("/api/equipes", (requisicao, resposta) => {
 
 app.get("/lista_jogadores", (requisicao, resposta) => {
     const jogadoresPorEquipe = listaJogadores.reduce((acc, jogador) => {
-        if (!acc[jogador.nomeEquipe]) acc[jogador.nomeEquipe] = [];
-        acc[jogador.nomeEquipe].push(jogador);
+        if (!acc[jogador.equipe]) acc[jogador.equipe] = [];
+        acc[jogador.equipe].push(jogador);
         return acc;
     }, {});
 
@@ -733,7 +733,16 @@ app.get("/lista_jogadores", (requisicao, resposta) => {
 });
 
 app.post("/lista_jogadores", (requisicao, resposta) => {
-    const jogador = requisicao.body;
-    listaJogadores.push(jogador);
+    const { jogador, num_camisa, data, altura, genero, posicao, nomeEquipe } = requisicao.body;
+    listaJogadores.push({
+        jogador,
+        num_camisa,
+        data,
+        altura,
+        genero,
+        posicao,
+        nomeEquipe
+    });
+
     resposta.redirect("/lista_jogadores");
 });
