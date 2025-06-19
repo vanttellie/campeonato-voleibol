@@ -2,6 +2,7 @@ const express = require('express');
 const session = require('express-session');
 const path = require('path');
 const cookieParser = require('cookie-parser');
+const moment = require("moment-timezone");
 
 const app = express();
 app.use(cookieParser());
@@ -23,7 +24,7 @@ app.post("/", (requisicao, resposta) => {
 
     if (email) {
         requisicao.session.usuario = email;
-        const ultimoLogin = new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' });
+        const ultimoLogin = moment().tz("America/Sao_Paulo").format("DD/MM/YYYY, HH:mm:ss");
         resposta.cookie('ultimoLogin', ultimoLogin, { maxAge: 1000 * 60 * 60 * 24 * 30 });
         resposta.redirect("/menu");
     } else {
