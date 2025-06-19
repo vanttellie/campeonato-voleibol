@@ -23,7 +23,7 @@ app.post("/", (requisicao, resposta) => {
 
     if (email) {
         requisicao.session.usuario = email;
-        const ultimoLogin = new Date().toISOString();
+        const ultimoLogin = new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' });
         resposta.cookie('ultimoLogin', ultimoLogin, { maxAge: 1000 * 60 * 60 * 24 * 30 });
         resposta.redirect("/menu");
     } else {
