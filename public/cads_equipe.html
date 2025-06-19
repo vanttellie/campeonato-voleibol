@@ -18,18 +18,18 @@
     <div class="d-flex align-items-center justify-content-center min-vh-100">
         <div class="form-box p-4">
         <h2 class="text-center mb-4">Cadastrar Equipe</h2>
-        <form method="POST" action="/lista_equipes.html">
+        <form method="POST" action="/cads_equipe">
             <div class="mb-3">
             <label for="equipe" class="form-label">Nome da Equipe</label>
-            <input type="text" class="form-control" id="equipe" required>
+            <input type="text" class="form-control" id="equipe" name="equipe">
             </div>
             <div class="mb-3">
             <label for="tecnico" class="form-label">Nome do Técnico Responsável</label>
-            <input type="text" class="form-control" id="tecnico" required>
+            <input type="text" class="form-control" id="tecnico" name="tecnico">
             </div>
             <div class="mb-4">
             <label for="telefone" class="form-label">Telefone do Técnico</label>
-            <input type="tel" class="form-control" id="telefone" required>
+            <input type="tel" class="form-control" id="telefone" name="telefone">
             </div>
             <div class="text-center">
             <button type="submit" class="btn submit-btn">Cadastrar Equipe</button>
